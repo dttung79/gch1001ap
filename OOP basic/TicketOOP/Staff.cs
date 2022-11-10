@@ -29,10 +29,10 @@ namespace TicketOOP
                 Customer c = new Customer();
                 int choice = c.GetMovieChoice();
                 int nTickets = c.GetNumberOfTickets();
-                string seats = c.GetSeats();
+                string seats = c.GetSeats(nTickets);
                 string movie = movies[choice];
 
-                Ticket t = new Ticket(movie, seats, number);
+                Ticket t = new Ticket(movie, seats, nTickets);
                 
                 PrintTicket(t);
                 
@@ -40,7 +40,6 @@ namespace TicketOOP
                 c.SetVIP();
 
                 PrintInvoice(c);
-
             }
         }
         
