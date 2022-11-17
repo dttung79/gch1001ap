@@ -20,9 +20,10 @@ namespace ProductManagement
 
         private static int count = 0;  // count number of created Product object
 
-        public int Count    // read-only property
+        private int id;
+        public int ID    // read-only property
         {
-            get { return count; }
+            get { return id; }
         }
 
         // defautl constructor
@@ -30,14 +31,19 @@ namespace ProductManagement
         {
             Name = "No name";
             Price = 0;
-            count += 1;
+            id = ++count;
         }
         // parameter constructor
         public Product(string name, int price)
         {
             Name = name;
             Price = price;
-            count += 1;
+            id = ++count;
+        }
+
+        public void ShowInfo()
+        {
+            Console.WriteLine("ID: " + ID + ", name: " + Name + ", price: " + Price);
         }
     }
 }
