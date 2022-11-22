@@ -4,7 +4,7 @@ namespace DemoInheritance
 {
     public class Person
     {
-        private string name;
+        protected string name;
         public string Name 
         {
             get { return name; }
