@@ -95,5 +95,19 @@ namespace StudentManagement
                 ts.OJT = ojt;
             }
         }
+        private void ShowBtecStudents()
+        {
+            foreach (BtecStudent bs in btecStudents)
+            {
+                bs.ShowInfo();
+            }
+        }
+        private void ShowTopupStudents()
+        {
+            foreach (TopupStudent ts in topupStudents)
+            {
+                ts.ShowInfo();
+            }
+        }
     }
 }
