@@ -30,7 +30,7 @@ namespace ProductManagement
             Price = price;
         }
 
-        public void ShowInfo()
+        public virtual void ShowInfo()
         {
             System.Console.WriteLine(name + ": $" + price);
         }

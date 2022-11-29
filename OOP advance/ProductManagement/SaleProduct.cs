@@ -24,10 +24,11 @@ namespace ProductManagement
             Sale = sale;
         }
 
-        public void ShowInfo()
+        public override void ShowInfo()
         {
-            double new_price = sale * price;
-            System.Console.WriteLine(name + ": $" + new_price);
+            System.Console.WriteLine("Original price: $" + price);
+            double new_price = price - sale * price;
+            System.Console.WriteLine(name + ": $" + new_price + "(sale " + sale*100 + "%)");
         }
 
     }
