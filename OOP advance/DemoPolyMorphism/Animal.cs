@@ -2,11 +2,8 @@ using System;
 
 namespace DemoPolyMorphism
 {
-    public class Animal
+    public abstract class Animal
     {
-        public virtual void Say()
-        {
-            Console.WriteLine("...");
-        }
+        public abstract void Say();
     }
 }
