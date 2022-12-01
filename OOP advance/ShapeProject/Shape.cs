@@ -32,6 +32,7 @@ namespace ShapeProject
         public virtual void ShowInfo()
         {
             Console.WriteLine("Shape: " + Name);
+            Console.WriteLine("Type: " + Type);
             Console.WriteLine("Area: " + GetArea());
             Console.WriteLine("Perimeter: " + GetPerimeter());
         }
