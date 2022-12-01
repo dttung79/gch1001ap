@@ -9,10 +9,12 @@ namespace ShapeProject
         public Circle() : base("Circle")
         {
             Radius = 1.0;
+            type = "Circle";
         }
         public Circle(string name, double radius) : base(name)
         {
             Radius = radius;
+            type = "Circle";
         }
 
         public override double GetArea()

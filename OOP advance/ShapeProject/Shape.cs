@@ -10,13 +10,20 @@ namespace ShapeProject
             get { return name; }
             set { name = value; }
         }
+        protected string type;
+        public string Type
+        {
+            get { return type; }
+        }
         public Shape()
         {
             name = "Shape";
+            type = "Shape";
         }
         public Shape(string name)
         {
             Name = name;
+            type = "Shape";
         }
 
         public abstract double GetArea();
